@@ -3,14 +3,32 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MyMaterialNavComponent } from './my-material-nav/my-material-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { DearPuppyComponent } from './dear-puppy/dear-puppy.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyMaterialNavComponent,
+    FirstComponent,
+    SecondComponent,
+    DearPuppyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
